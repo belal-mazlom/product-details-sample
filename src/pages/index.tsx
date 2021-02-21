@@ -17,7 +17,6 @@ export default function Index({ data }: IndexProps) {
     async function loadProduct(id: number) {
       const response = await fetch(`/api/product/${id}`);
       const data = await response.json();
-      console.log('re', data);
       setProduct(data);
     }
 
