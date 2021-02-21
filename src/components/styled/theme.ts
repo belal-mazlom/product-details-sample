@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components';
 
 export const ThemeContext = createContext({
   toggleTheme: () => {},
+  size: { width: 0, height: 0 },
 });
 
 

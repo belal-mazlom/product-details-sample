@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -69,5 +69,34 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
+  }
+`;
+
+export const Header = styled.div`
+  background-color: ${({ theme }) => theme.primaryColor};
+  color: ${({ theme }) => theme.txtColor};
+  height: 4rem;
+  line-height: 4rem;
+`;
+
+export const Logo = styled.h1`
+  color: ${({ theme }) => theme.txtColor};
+  padding: 0 0 0 2rem;
+  margin: 0;
+`;
+
+export const Button = styled.button`
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: ${({ theme }) => theme.txtColor};
+  background-color: ${({ theme }) => theme.secondaryBgColor};
+  padding: 1rem 2rem;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: ${({ theme }) => theme.primaryColor};
   }
 `;
