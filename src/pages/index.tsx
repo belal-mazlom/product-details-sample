@@ -1,4 +1,5 @@
-import Head from "next/head";
+import Head from 'next/head';
+import { Title } from '@components/styled';
 
 export default function Home() {
   return (
@@ -9,9 +10,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
+        <Title>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        </Title>
       </main>
     </div>
   );
