@@ -1,18 +1,27 @@
 import Head from 'next/head';
-import { Title } from '@components/styled';
+import { Container, Details, Preview, Title } from '@components/home/styled';
 
-export default function Home() {
+type HomeProps = {
+
+};
+
+export default function Home(props: HomeProps) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Product details</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
-        <Title>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </Title>
+        <Container>
+          <Preview>
+            images
+          </Preview>
+          <Details>
+            <Title>CAPRI TRIPLE WHITE</Title>
+          </Details>
+        </Container>
       </main>
     </div>
   );
