@@ -24,8 +24,10 @@ yarn build
 
 ## Run Test project
 ```bash
+npm run dev
 npm run test
 # or
+yarn dev
 yarn test
 ```
 
